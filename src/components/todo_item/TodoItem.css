@@ -1,0 +1,54 @@
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.todo-item:last-child {
+    margin-bottom: unset;
+}
+
+.todo-item .todo-item-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.todo-item .todo-item-container .checkbox {
+    width: 20px;
+    height: 20px;
+    accent-color: var(--purple);
+}
+
+
+.todo-item .todo-item-container .todo-item-text {
+    font-size: 1rem;
+}
+
+
+.todo-item .delete-btn {
+    position: relative;
+    cursor: pointer;
+}
+
+.todo-item .delete-btn .delete-btn-line {
+    width: 20px;
+    height: 3px;
+    display: block;
+    background-color: var(--red);
+    position: absolute;
+}
+
+.todo-item .delete-btn .delete-btn-line:first-child {
+    transform: rotate(45deg);
+}
+
+.todo-item .delete-btn .delete-btn-line:last-child {
+    transform: rotate(-45deg);
+}
+
+.line-through {
+    text-decoration: line-through;
+}
